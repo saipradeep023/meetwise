@@ -231,3 +231,6 @@ The application requires two frontend environment variables. Place them in `.env
 
 ---
 
+**Project Explanation**
+
+_VIDEO LINK_ : https://drive.google.com/file/d/1k4NzIhFlow-QEOl7S8yYVHa3vAfaTDbb/view?usp=sharing
