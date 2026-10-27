@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { @apply bg-slate-50 dark:bg-slate-950; }
+  body { @apply m-0 bg-slate-50 font-sans text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100; }
+  button, input, select { font: inherit; }
+}
+
+@layer components {
+  .button-primary { @apply rounded-md bg-teal-700 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-800 disabled:cursor-not-allowed disabled:opacity-60 transition-colors duration-150 dark:bg-teal-600 dark:hover:bg-teal-500; }
+  .button-secondary { @apply rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 transition-colors duration-150 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700; }
+  .button-signout { @apply rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 hover:bg-red-50 hover:text-red-700 hover:border-red-300 transition-colors duration-150 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-red-950/40 dark:hover:text-red-400 dark:hover:border-red-900; }
+  .field { @apply block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 shadow-sm outline-none focus:border-teal-600 focus:ring-2 focus:ring-teal-100 transition-shadow duration-150 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:ring-teal-900/60 dark:focus:border-teal-500; }
+  .label { @apply mb-1 block text-sm font-medium text-slate-700 dark:text-slate-300; }
+  .card { @apply rounded-xl bg-white p-5 shadow-sm ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800 dark:text-slate-100; }
+  .card-link { @apply block transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:ring-2 hover:ring-teal-300 dark:hover:ring-teal-600; }
+  .card-link h2, .section-title { @apply text-base font-semibold text-slate-900 dark:text-slate-100; }
+  .card-link p { @apply mt-2 text-sm text-slate-600 dark:text-slate-400; }
+  .page-title { @apply mt-1 text-2xl font-bold tracking-tight text-slate-950 sm:text-3xl dark:text-white; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-400; }
+  .status-free { @apply rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300; }
+  .status-busy { @apply rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600 dark:bg-slate-800 dark:text-slate-300; }
+  .status-cancelled { @apply rounded-full bg-red-50 px-2.5 py-1 text-xs font-semibold text-red-700 dark:bg-red-950/60 dark:text-red-300; }
+  .status-ongoing { @apply rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950/60 dark:text-blue-300; }
+}
